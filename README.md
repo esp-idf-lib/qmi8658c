@@ -1,5 +1,9 @@
 # esp-idf-lib/qmi8658c
 
+[![Build examples](https://github.com/esp-idf-lib/qmi8658c/actions/workflows//build.yml/badge.svg)](https://github.com/esp-idf-lib/qmi8658c/actions/workflows//build.yml)
+[![Build docs](https://github.com/esp-idf-lib/qmi8658c/actions/workflows//build-docs.yml/badge.svg)](https://github.com/esp-idf-lib/qmi8658c/actions/workflows//build-docs.yml)
+[![Validation](https://github.com/esp-idf-lib/qmi8658c/actions/workflows//validate-component.yml/badge.svg)](https://github.com/esp-idf-lib/qmi8658c/actions/workflows//validate-component.yml)
+
 Driver for QMI8658C 6-axis IMU sensor.
 
 * [Documentation](https://esp-idf-lib.github.io/qmi8658c/)
@@ -11,7 +15,7 @@ Driver for QMI8658C 6-axis IMU sensor.
 ## Installation
 
 ```sh
-idf.py add-dependency esp-idf-lib/qmi8658c^0.5.0
+idf.py add-dependency esp-idf-lib/qmi8658c
 ```
 
 ## Support
