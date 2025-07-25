@@ -6,5 +6,5 @@ menu "Example configuration"
             I2C address of QMI8658C IMU.
             This address is used to communicate with the IMU over I2C.
             The default value is 0x6B, which is the common address for this device.
-    rsource "../../../../devtools/Kconfig.i2c"
+    rsource "../../../Kconfig.i2c"
 endmenu
