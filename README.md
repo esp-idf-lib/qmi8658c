@@ -11,7 +11,7 @@ Driver for QMI8658C 6-axis IMU sensor.
 ## Installation
 
 ```sh
-idf.py add-dependency "esp-idf-lib/qmi8658c^0.5.0
+idf.py add-dependency esp-idf-lib/qmi8658c^0.5.0
 ```
 
 ## Support
