@@ -18,7 +18,8 @@ dependencies:
     version: "*"
   esp-idf-lib/esp_idf_lib_helpers:
     version: "*"
-maintainers: xyzroe (@xyzroe) <i@xyzroe.cc>
+maintainers:
+  - xyzroe (@xyzroe) <i@xyzroe.cc>
 url: https://github.com/esp-idf-lib/core
 repository: https://github.com/esp-idf-lib/qmi8658c
 documentation: https://esp-idf-lib.github.io/qmi8658c/
