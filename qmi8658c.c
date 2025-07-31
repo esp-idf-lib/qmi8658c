@@ -1,20 +1,20 @@
 /*
  * Copyright (c) 2024 xyzroe <i@xyzroe.cc>
- * 
+ *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
- * 
+ *
  * 1. Redistributions of source code must retain the above copyright notice,
  *    this list of conditions and the following disclaimer.
- * 
+ *
  * 2. Redistributions in binary form must reproduce the above copyright notice,
  *    this list of conditions and the following disclaimer in the documentation
  *    and/or other materials provided with the distribution.
- * 
+ *
  * 3. Neither the name of the copyright holder nor the names of its contributors
  *    may be used to endorse or promote products derived from this software without
  *    specific prior written permission.
- * 
+ *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
  * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
@@ -25,7 +25,7 @@
  * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
  * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- */ 
+ */
 
 /**
  * @file qmi8658c.c
@@ -152,7 +152,8 @@ esp_err_t qmi8658c_reset(i2c_dev_t *dev)
 }
 
 /* Accelerometer sensitivity table */
-uint16_t acc_scale_sensitivity_table[4] = {
+uint16_t acc_scale_sensitivity_table[4] =
+{
     ACC_SCALE_SENSITIVITY_2G, // Sensitivity for ±2g range.
     ACC_SCALE_SENSITIVITY_4G, // Sensitivity for ±4g range.
     ACC_SCALE_SENSITIVITY_8G, // Sensitivity for ±8g range.
@@ -160,7 +161,8 @@ uint16_t acc_scale_sensitivity_table[4] = {
 };
 
 /* Gyroscope sensitivity table */
-uint16_t gyro_scale_sensitivity_table[8] = {
+uint16_t gyro_scale_sensitivity_table[8] =
+{
     GYRO_SCALE_SENSITIVITY_16DPS,   // Sensitivity for ±16 degrees per second range.
     GYRO_SCALE_SENSITIVITY_32DPS,   // Sensitivity for ±32 degrees per second range.
     GYRO_SCALE_SENSITIVITY_64DPS,   // Sensitivity for ±64 degrees per second range.

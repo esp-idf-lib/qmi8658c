@@ -1,20 +1,20 @@
 /*
  * Copyright (c) 2024 xyzroe <i@xyzroe.cc>
- * 
+ *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are met:
- * 
+ *
  * 1. Redistributions of source code must retain the above copyright notice,
  *    this list of conditions and the following disclaimer.
- * 
+ *
  * 2. Redistributions in binary form must reproduce the above copyright notice,
  *    this list of conditions and the following disclaimer in the documentation
  *    and/or other materials provided with the distribution.
- * 
+ *
  * 3. Neither the name of the copyright holder nor the names of its contributors
  *    may be used to endorse or promote products derived from this software without
  *    specific prior written permission.
- * 
+ *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
  * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
@@ -25,7 +25,7 @@
  * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
  * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
- */ 
+ */
 
 /**
  * @file qmi8658c.h
@@ -108,13 +108,15 @@ extern "C" {
 #define GYRO_SCALE_SENSITIVITY_1024DPS (1 << 5)  // Sensitivity for ±1024 degrees per second range.
 #define GYRO_SCALE_SENSITIVITY_2048DPS (1 << 4)  // Sensitivity for ±2048 degrees per second range.
 
-typedef enum {
+typedef enum
+{
     QMI8658C_MODE_ACC_ONLY = 1,
     QMI8658C_MODE_GYRO_ONLY,
     QMI8658C_MODE_DUAL,
 } qmi8658c_mode_t;
 
-typedef enum {
+typedef enum
+{
     QMI8658C_ACC_ODR_8000,
     QMI8658C_ACC_ODR_4000,
     QMI8658C_ACC_ODR_2000,
@@ -130,7 +132,8 @@ typedef enum {
     QMI8658C_ACC_ODR_3,
 } qmi8658c_acc_odr_t;
 
-typedef enum {
+typedef enum
+{
     QMI8658C_GYRO_ODR_8000,
     QMI8658C_GYRO_ODR_4000,
     QMI8658C_GYRO_ODR_2000,
@@ -142,14 +145,16 @@ typedef enum {
     QMI8658C_GYRO_ODR_31_25,
 } qmi8658c_gyro_odr_t;
 
-typedef enum {
+typedef enum
+{
     QMI8658C_ACC_SCALE_2G,
     QMI8658C_ACC_SCALE_4G,
     QMI8658C_ACC_SCALE_8G,
     QMI8658C_ACC_SCALE_16G,
 } qmi8658c_acc_scale_t;
 
-typedef enum {
+typedef enum
+{
     QMI8658C_GYRO_SCALE_16DPS,
     QMI8658C_GYRO_SCALE_32DPS,
     QMI8658C_GYRO_SCALE_64DPS,

@@ -25,7 +25,8 @@ static void qmi8658c_task(void *pvParameters)
 
     ESP_ERROR_CHECK(qmi8658c_init_desc(&dev, CONFIG_EXAMPLE_QMI_ADDRESS, 0, CONFIG_EXAMPLE_I2C_MASTER_SDA, CONFIG_EXAMPLE_I2C_MASTER_SDA));
 
-    qmi8658c_config_t config = {
+    qmi8658c_config_t config =
+    {
         .mode = QMI8658C_MODE_DUAL,
         .acc_scale = QMI8658C_ACC_SCALE_4G,
         .acc_odr = QMI8658C_ACC_ODR_1000,
