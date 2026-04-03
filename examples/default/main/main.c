@@ -23,7 +23,7 @@ static void qmi8658c_task(void *pvParameters)
 {
     i2c_dev_t dev = {0};
 
-    ESP_ERROR_CHECK(qmi8658c_init_desc(&dev, CONFIG_EXAMPLE_QMI_ADDRESS, 0, CONFIG_EXAMPLE_I2C_MASTER_SDA, CONFIG_EXAMPLE_I2C_MASTER_SDA));
+    ESP_ERROR_CHECK(qmi8658c_init_desc(&dev, CONFIG_EXAMPLE_QMI_ADDRESS, 0, CONFIG_EXAMPLE_I2C_MASTER_SDA, CONFIG_EXAMPLE_I2C_MASTER_SCL));
 
     qmi8658c_config_t config =
     {
