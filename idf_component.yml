@@ -1,7 +1,7 @@
 ---
 version: 0.5.8
 description: Driver for QMI8658C 6-axis IMU sensor
-license: BSD-3
+license: BSD-3-Clause
 dependencies:
   esp-idf-lib/i2cdev:
     version: "*"
